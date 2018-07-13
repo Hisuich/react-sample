@@ -15,7 +15,7 @@ class Form extends React.Component {
         this.values[0] = this.fvalue.current.value;
         this.values[1] = this.svalue.current.value;
         console.log(this.values);
-        this.props.store.dispatch({
+        this.props.dispatch({
             type: this.props.action,
             values: this.values
         });

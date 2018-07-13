@@ -1,12 +1,14 @@
 import React from 'react';
 import Menu from './Menu';
+import Form from './Form';
 import Display from './Display';
 
 const Body = (props) => {
         return (
         <div className='d-flex flex-row body'>
            <Menu />
-           <Display store={props.store}/>
+           <Form />
+           <Display />
         </div>
     );
     }

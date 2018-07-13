@@ -1,17 +1,30 @@
-import React from 'react';
-import Form from './Form';
-import Graph from './Graph';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
+class Graph extends Component {
+        render() {
+            const props = this.props;
 
-const Display = (props) => {
-    
-        return (
-        <div className="d-flex flex-row display">
-            <Form store={props.store}/>
-            <Graph />
-        </div>
+            return (
+            <div className="d-flex flex-row display">
+
+                {props.values.map(value => {
+                    return (
+                        <div className="p-2 value">{value}</div>
+                    );
+                })}
+
+                <div className="p-2">
+                    {props.result}          
+                </div>
+            </div>
     );
-    }
+}
+}
 
+const mapStateToProps = (state) => ({
+    values: state.values,
+    result: state.result
+})
 
-export default Display;
+export default connect(mapStateToProps)(Graph);

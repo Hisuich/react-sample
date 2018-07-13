@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .App {
   text-align: center;
@@ -29,10 +29,6 @@
   to { transform: rotate(360deg); }
 }
 
-.col {
-  background-color: #666699;
-  border: 1px solid #800000;
-}
 
 .main {
   color: #79a8d8;
@@ -41,64 +37,24 @@
   height: 100%;
 }
 
-.header {
+header {
   background-color: #042547;
   height: 20%;
 }
 
-.oswald-font {
+.title {
+  text-align: right;
+  font-size: 50px;
+  margin-right: 20%;
   font-family: 'Oswald', sans-serif;
 }
 
 .body {
   color: #800000;
   height: 60%;
-  
-}
-
-.menu {
-  width: 30%;
-  border-left: #042547 solid 2px;
-  padding: 0;
-}
-
-.display {
-  width: 70%;
   border-left: #042547 solid 2px;
   border-right: #042547 solid 2px;
-}
-
-.menu .item {
-  background: #79a8d8;
-  border-bottom: #042547 solid 2px;
-  border-top: #042547 solid 2px;
-  padding-bottom: 25px;
-  border-radius: 10%;
-  margin-top: 10px;
-}
-
-.menu .item:last-child {
- margin-bottom: 10px;
-}
-
-.menu .item:hover {
-  background: #0f0e5c;
-  color: #d7e1eb;
-}
-
-.menu .item:active {
-  background: #0f0cd8;
-}
-
-.footer {
-  background-color: #042547;
-  height: 20%;
-
-}
-
-.title {
-  font-size: 50px;
-  margin-right: 20%;
+  
 }
 
 .form {
@@ -110,4 +66,14 @@
   width: 100%;
 }
 
+footer {
+  background-color: #042547;
+  height: 20%;
+}
+
+.foot {
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 20%;
+}
 

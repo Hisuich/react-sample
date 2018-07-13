@@ -1,0 +1,27 @@
+.menu {
+    width: 30%;
+    border-right: #042547 solid 2px;
+    padding: 0;
+  }
+  
+  .menu .item {
+    background: #79a8d8;
+    border-bottom: #042547 solid 2px;
+    border-top: #042547 solid 2px;
+    padding-bottom: 25px;
+    border-radius: 10%;
+    margin-top: 10px;
+  }
+  
+  .menu .item:last-child {
+   margin-bottom: 10px;
+  }
+  
+  .menu .item:hover {
+    background: #0f0e5c;
+    color: #d7e1eb;
+  }
+  
+  .menu .item:active {
+    background: #0f0cd8;
+  }

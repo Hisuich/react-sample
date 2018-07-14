@@ -7,12 +7,14 @@ import Footer from './Footer.jsx';
 class App extends Component {
   render() {
     return (
+      <div className="wrapper">
       <div className="main">
         <div className="container-fluid">
           <Header />
-          <Body store={this.props.store}/>
+          <Body />
           <Footer />
         </div>
+      </div>
       </div>
     );
   }

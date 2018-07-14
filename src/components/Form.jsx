@@ -25,11 +25,14 @@ class Form extends React.Component {
         return (
         <div>
             <form className="form" onSubmit={this.onSubmit}>
-                <div>
-                    <input type="text" ref={this.fvalue}/><br />
-                    <input type="text" ref={this.svalue}/><br />  
+                <div className="">
+                    <label htmlFor="fvalue">First Value: </label>
+                    <input type="text" className="form-control" id="fvalue" ref={this.fvalue}/>
+                    <label htmlFor="svalue">Second Value: </label>
+                    <input type="text" className="form-control" if="svalue" ref={this.svalue}/>
                 </div>
-            <button type="submit">Send</button>  <br />
+                <br />
+            <button className="btn btn-secondary" type="submit">{this.props.action}</button>
             </form>
         </div>
     );}}

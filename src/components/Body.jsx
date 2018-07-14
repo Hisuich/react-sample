@@ -5,10 +5,10 @@ import Display from './Display';
 
 const Body = (props) => {
         return (
-        <div className='d-flex flex-row body'>
-           <Menu />
-           <Form />
-           <Display />
+        <div className='d-flex flex-row justify-content-between body'>
+            <Menu />
+            <Display />
+            <Form />
         </div>
     );
     }

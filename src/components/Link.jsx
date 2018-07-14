@@ -12,7 +12,7 @@ class Link extends Component {
 
     render () {
         return (
-        <div className="p-2 item"
+        <div className="p-2 btn item btn-info"
             onClick={this.onClick}>
             {this.props.value}
          </div>

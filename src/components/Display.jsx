@@ -7,14 +7,8 @@ class Graph extends Component {
 
             return (
             <div className="d-flex flex-row display">
-
-                {props.values.map(value => {
-                    return (
-                        <div className="p-2 value">{value}</div>
-                    );
-                })}
-
                 <div className="p-2">
+                    Result: <br />
                     {props.result}          
                 </div>
             </div>
